@@ -130,6 +130,21 @@ body {
 .pdf-link svg { width: 13px; height: 13px; flex: none; }
 @media print { .pdf-link { display: none !important; } }
 
+/* ── SCOPE NOTE (end of §1) ── */
+.scope-box {
+  background: var(--green-light);
+  border-left: 3px solid var(--green);
+  border-radius: 0 6px 6px 0;
+  padding: 1.1rem 1.4rem;
+  margin: 0.8rem 0 0;
+}
+.scope-box > p { font-size: 0.95rem; line-height: 1.6; margin: 0 0 0.8rem; }
+.scope-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; }
+.scope-grid h4 { font-size: 0.92rem; margin: 0 0 0.35rem; }
+.scope-grid ul { margin: 0; padding-left: 1.1rem; font-size: 0.92rem; line-height: 1.55; }
+.scope-grid li { margin-bottom: 0.3rem; }
+@media (max-width: 640px) { .scope-grid { grid-template-columns: 1fr; gap: 1rem; } }
+
 /* ── ARTICLE ── */
 .article-wrap { max-width: 780px; margin: 0 auto; padding: 3rem 2rem 4rem; }
 
@@ -497,6 +512,7 @@ ol.footnotes-list li:target {
   .hero { padding: 2rem; }
   .article-wrap { padding: 1rem; }
   .cat-card { break-inside: avoid; }
+  .scope-box { break-inside: avoid; }
   ol.steps li { break-inside: avoid; }
 }
 
@@ -551,9 +567,9 @@ figure svg { max-width: 100%; height: auto; display: block; margin: 0 auto; }
     <div class="hero-eyebrow">Pre-release</div>
     <h1>The Wrong Clock</h1>
     <p class="hero-subtitle">Why the Medical plan should follow the evidence, not the corporate calendar.</p>
-    <p class="hero-meta">Christian Wasmer &amp; Friederike Winter &middot; Consilience &middot; October 29, 2026</p>
+    <p class="hero-meta">Christian Wasmer &amp; Friederike Winter &middot; Consilience &middot; November 13, 2026</p>
     <p class="hero-meta"><a href="https://www.consiliencestrategy.com">www.consiliencestrategy.com</a></p>
-    <p style="margin:0"><a class="pdf-link" href="Consilience_The_Wrong_Clock_2026-10-29.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg><span>Download PDF</span></a></p>
+    <p style="margin:0"><a class="pdf-link" href="Consilience_The_Wrong_Clock_2026-11-13.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg><span>Download PDF</span></a></p>
   </div>
 </section>
 
@@ -577,6 +593,30 @@ figure svg { max-width: 100%; height: auto; display: block; margin: 0 auto; }
 
 <p>
   In this white paper we argue that letting science, not the corporate calendar, set the schedule for Medical planning not only improves the plan&rsquo;s relevance, but is also feasible in today&rsquo;s corporate environment.</p>
+
+<h3>Scope</h3>
+<div class="scope-box">
+  <p>This paper focuses on specific aspects of Medical planning; Out-of-scope topics are still relevant and may be covered in future publications.</p>
+  <div class="scope-grid">
+    <div>
+      <h4>In scope</h4>
+      <ul>
+        <li>Medical plan of one asset, at global level</li>
+        <li>Development through approval and in market (section 4)</li>
+        <li>Interfaces with brand planning, budget, and legal review, as prerequisites (section 4)</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Out of scope</h4>
+      <ul>
+        <li>Portfolio planning and prioritization across assets</li>
+        <li>Regional and local adaptations of the global plan</li>
+        <li>Lifecycle management decisions (e.g., new indications or formulations)</li>
+        <li>Design of corporate budget and planning processes</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 <hr class="section-break">
 <h2>2 &middot; Focusing the adaptations where they are needed</h2>
